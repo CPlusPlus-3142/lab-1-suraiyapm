@@ -1,7 +1,7 @@
-all: a.out
+all: a.exe
 
-a.out:
-	g++ -std=c++17  src/app.cpp test/test.cpp -o a.out
+a.exe:
+	g++ -std=c++17  src/app.cpp test/test.cpp -o a.exe
 
-test: a.out
-	./a.out -s -d -t
+test: a.exe
+	./a.exe -s -d -t
